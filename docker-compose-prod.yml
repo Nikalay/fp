@@ -1,0 +1,14 @@
+version: "3.1"
+services:
+    nginx:
+        restart: always
+        ports:
+            - "80:80"
+            - "8080:8080"
+            - "443:443"
+
+    php-fpm:
+        restart: always
+
+    mysql:
+        restart: always
